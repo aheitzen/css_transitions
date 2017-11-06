@@ -1,0 +1,80 @@
+:root {
+	--lato: 'Lato', sans-serif;
+	--petit: 'Petit Formal Script', cursive;
+	--knewave: 'Knewave', cursive;
+	--openSans: 'Open Sans', sans-serif;
+	--largeFont: 80px;
+	--orangeRed: #b800e6;
+	--align: center;
+}
+
+
+html, body {
+	background-image: url(../img/hodgepodge.png);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+}
+
+p#css {
+	font-family: var(--knewave);
+	font-size: var(--largeFont);
+	color: black;
+	transition-property: color;
+	-webkit-text-stroke: 4px #ffffff;
+	text-align: var(--align);
+	margin-top: 40px;
+}
+
+p#css:hover {
+	color: var(--orangeRed);
+	transition-timing-function: ease-in;
+	transition-duration: .5s;
+	cursor: pointer;
+}
+
+p#transitions {
+	font-family: var(--knewave);
+	font-size: var(--largeFont);
+	color: black;
+	cursor: pointer;
+	-webkit-text-stroke: 4px #ffffff;
+	text-align: var(--align);
+}
+
+p#transitions:hover {
+	font-family: var(--openSans);
+	transition-timing-function: linear;
+	color: var(--orangeRed);
+}
+
+p#are {
+	font-family: var(--knewave);
+	font-size: var(--largeFont);
+	color: black;
+	-webkit-text-stroke: 4px #ffffff;
+	text-align: var(--align);
+}
+
+p#are:hover {
+	color: var(--orangeRed);
+	letter-spacing: 80px;
+	transition-timing-function: ease;
+	transition-duration: 2s;
+	cursor: pointer;
+}
+
+p#fun {
+	font-family: var(--knewave);
+	font-size: var(--largeFont);
+	color: black;
+	-webkit-text-stroke: 4px #ffffff;
+	text-align: var(--align);
+}
+
+p#fun:hover {
+	opacity: 0;
+	transition-timing-function: ease-out;
+	transition-duration: .2s;
+	cursor: pointer;
+}
